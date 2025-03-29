@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.btcss {
+    border: none;
+    outline: none;
+    background-color: rgb(89, 57, 186);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 2px 3px 6px 2px #000000ac;
+    -webkit-box-shadow: 2px 3px 6px 2px #000000ac;
+    cursor: pointer;
+}
+
+.btcss:hover {
+    transition: 0.5s;
+    background-color: rgb(58, 9, 206);
+    transform: rotate(-5deg);
+    letter-spacing: 1px;
+}
+
+header {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#logoPortion {
+    cursor: pointer;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: inherit;
+}
+
+header span {
+    white-space: nowrap;
+    font-size: 30px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    display: block;
+}
+
+#backMain {
+    position: fixed;
+    z-index: -1;
+}
+
+.bType {
+    width: inherit;
+}
+
+.back {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* button {
+    height: fit-content;
+    height: -moz-fit-content;
+    background-color: rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+} */
+
+/* button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 46, 114);
+    color: #ffff00;
+    cursor: pointer;
+} */
+
+
+.subMenu {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 500;
+    font-size: 20px;
+}
+
+
+.subMenu p, .subMenu input, .subMenu div, .subMenu img {
+    margin-bottom: 10px;
+}
+
+.subMenu img {
+    height: 60px;
+}
+
+input {
+    text-align: center;
+}
+
+/* input {
+    padding: 3px;
+    width: 80vw;
+    max-width: 500px;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+} */
+
+#start button, #pcolor button {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.loadBox {
+    margin-top: 20px;
+    height: 7px;
+    max-width: 500px;
+    width: 85vw;
+    border: 1px solid white;
+}
+
+.progress {
+    transition: 0.4s;
+    height: inherit;
+    width: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+.scoreBoard {
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 10px;
+}
+
+.scoreBoard2 {
+    display: inline-block;
+    background-color: rgb(246, 255, 198);
+    border: rgb(0, 0, 0) 3px solid;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dice1 {
+    width: 49.18;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.goats {
+    position: fixed;
+    top: 200vh;
+    left: 200vw;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.scores {
+    position: fixed;
+    font-weight: bold;
+}
+
+#messageDisplay {
+    transition: 0.5s;
+    position: fixed;
+    bottom: -20vh;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 400;
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+#messageDisplay img {
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+.teamMesses, .teamNames {
+    position: fixed;
+    text-align: center;
+    font-weight: normal;
+}
+
+.teamNames {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    float: left;
+}
+
+.sgoats {
+    display: none;
+    transition: none;
+    opacity: 0;
+}
+
+#diceRunner {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 350;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.dices {
+    position: fixed;
+    display: flex;
+    float: left;
+}
+
+
+.dside {
+    overflow: hidden;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.dside img{
+    height: inherit;
+}
+
+.predict {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 200vh;
+    left: 200vw;
+    z-index: 150;
+}
+
+.imginaryGoats {
+    cursor: pointer;
+    transform: rotate(15deg);
+    transition: 0.5s;
+}
+
+#skipBox {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 200;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+#startGame {
+    font-size: 20px;
+}
+
+#canvas {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+
+.notrealdice {
+    display: none;
+}
+
+#pingDisplay {
+    font-size: 15px;
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    z-index: 999;
+}
+
+.sbox {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.redBox {
+    background-color: rgb(255, 0, 0);
+}
+
+.yellowBox {
+    background-color: rgb(225, 225, 0);
+}
+
+.greenBox {
+    background-color: rgb(106, 255, 47);
+}
+
+.blueBox {
+    background-color: rgb(0, 89, 255);
+}
+
+.leftLine {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#idrecshare {
+    color: rgb(0, 224, 0);
+}
+
+/* .headArea p {
+    margin-bottom: 30px;
+     font-size: 25px; 
+} */
+
+.choosingTeam {
+    display: none;
+}
+
+#unknownLoading {
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+#loadingGear {
+    transition: 10ms;
+    height: 20px;
+}
+
+.footerArea {
+    margin-top: 100px;
+    font-style: italic;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 145, 255);
+}
+
+.itl {
+    font-style: italic;
+}
+
+.cr {
+    color: rgb(255, 0, 0);
+}
+
+.cg {
+    color: rgb(0, 206, 0);
+}
+
+.cy {
+    color: rgb(216, 216, 4);
+}
+
+.cb {
+    color: rgb(0, 204, 255);
+}
+
+.disabled {
+    color: rgb(168, 168, 168);
+    margin-left: 20px;
+}
+
+.ans {
+    color: rgb(63, 148, 100);
+    margin-left: 20px;
+}
+
+.presentHere {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#startingScreen {
+    transition: 0.5s;
+    display: flex;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+#depname {
+    font-size: 15px;
+    position: fixed;
+    bottom: 5px;
+}
+
+#startcontent {
+    letter-spacing: 1vw;
+    transition: 0.5s;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+#startingScreen img {
+    height: 70px;
+}
+
+.containRatio {
+    white-space: nowrap;
+}
+
+.alert {
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    color: black;
+    font-weight: bold;
+    background: #9ceaff;
+    border-bottom: 0.55em solid #5db8ed;
+    transition: 0.3s;
+}
+
+.alert:hover {
+    background: #5ffffc;
+    border-bottom: 0.55em solid #07d8eb;
+    transition: 0.3s;
+}
+#socialGate{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index:150;
+}
+#socialGate img{
+    height: 70%;
+}
+#gotoHome{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.btns{
+    display :flex;
+    float: left;
+}

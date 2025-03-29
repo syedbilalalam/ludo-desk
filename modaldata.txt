@@ -1,0 +1,52 @@
+r                                 -player name
+g
+y
+b
+ra                                -goat vals
+rb
+rc
+rd
+ga
+gb
+gc
+gd
+ya
+yb
+yc
+yd
+ba
+bb
+bc
+bd
+rs                                  -- positions 
+gs
+ys
+bs
+rd1                                 --dice of all teams
+rd2
+gd1
+gd2
+yd1
+yd2
+bd1
+bd2
+t                                   --turn counter
+sts                             -- game status
+rad                                 --additionalTurns
+gad
+yad
+bad
+rp                                   ---passed info for out goats
+gp
+yp
+bp
+tt                                 --total turns in the game
+adm                                --admin
+tp
+rdv
+gdv
+ydv
+bdv
+
+
+>>>>>>>>>>>>>>>>>>>>>new bugs<<<<<<<<<<<<<<<<<<<<<<<<<

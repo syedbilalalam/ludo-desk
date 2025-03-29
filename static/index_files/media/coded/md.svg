@@ -1,0 +1,13 @@
+<svg id="MessageDisplay" xmlns="http://www.w3.org/2000/svg" width="76" height="66" viewBox="0 0 76 66">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" d="M38,66.3L-0.484-.352H76.484Z"/>
+</svg>

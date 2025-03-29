@@ -1,0 +1,1 @@
+<?php if(isset($_POST['id'])&&isset($_POST['name'])&&is_dir('../../'.$_POST['id'].'/'.$_POST['name'].'/')){$sendingData='';$path='../data.txt';$file=fopen($path,'r');$sendingData=fread($file,filesize($path));fclose($file);echo$sendingData;}else{$error['error']='InvalidInformation!';die(json_encode($error));};

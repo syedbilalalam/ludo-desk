@@ -1,0 +1,17 @@
+{
+  "name": "privatepractise2",
+  "version": "1.0.0",
+  "description": "My first app on Node js some please support me !",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Syed Bilal Alam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "ws": "^8.8.1"
+  }
+}

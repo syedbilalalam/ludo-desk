@@ -1,0 +1,2 @@
+<?php
+const definedData = array("rn","gn","yn","bn","ra","rb","rc","rd","ga","gb","gc","gd","ya","yb","yc","yd","ba","bb","bc","bd","rs","gs","ys","bs","rd1","rd2","gd1","gd2","yd1","yd2","bd1","bd2","t","sts","rad","gad","yad","bad","rp","gp","yp","bp","tt","adm","tp","rdv","gdv","ydv","bdv");

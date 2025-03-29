@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index_files/docs/styles.css">
+    <link rel="shortcut icon" href="./index_files/media/coded/logo.svg" type="image/x-icon">
+    <title>LUDO DESK</title>
+    <script src="./index_files/docs/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <div id="pingDisplay">--</div>
+    <div id="unknownLoading"><img id="loadingGear" src="./index_files/media/coded/loading.svg" alt=""> <span
+            id="loadMess">Connecting to server...</span></div>
+    <header>
+        <div id="logoPortion">
+            <img src="./index_files/media/coded/logo.svg" alt="logo.svg">
+            <span class="heading">LUDO DESK</span>
+        </div>
+    </header>
+    <main>
+        <img src="./index_files/media/coded/ludo.svg" alt="board" id="backMain">
+        <div id="board">
+            <img src="./index_files/media/coded/rg.svg" id="ra" alt="goat" destination="no" class="r goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/rg.svg" id="rb" alt="goat" destination="no" class="r goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/rg.svg" id="rc" alt="goat" destination="no" class="r goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/rg.svg" id="rd" alt="goat" destination="no" class="r goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/gg.svg" id="ga" alt="goat" destination="no" class="g goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/gg.svg" id="gb" alt="goat" destination="no" class="g goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/gg.svg" id="gc" alt="goat" destination="no" class="g goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/gg.svg" id="gd" alt="goat" destination="no" class="g goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/yg.svg" id="ya" alt="goat" destination="no" class="y goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/yg.svg" id="yb" alt="goat" destination="no" class="y goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/yg.svg" id="yc" alt="goat" destination="no" class="y goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/yg.svg" id="yd" alt="goat" destination="no" class="y goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/bg.svg" id="ba" alt="goat" destination="no" class="b goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/bg.svg" id="bb" alt="goat" destination="no" class="b goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/bg.svg" id="bc" alt="goat" destination="no" class="b goats ptype prefam" ludoid="0">
+            <img src="./index_files/media/coded/bg.svg" id="bd" alt="goat" destination="no" class="b goats ptype prefam" ludoid="0">
+            <div id="socialGate">
+                <img src="./index_files/media/coded/social.svg" alt="button">
+            </div>
+            <p id="scorer" controller="external" class="scores">0</p>
+            <p id="scoreg" controller="external" class="scores">0</p>
+            <p id="scorey" controller="external" class="scores">0</p>
+            <p id="scoreb" controller="external" class="scores">0</p>
+            <p id="teamr" class="teamMesses"></p>
+            <p id="teamg" class="teamMesses"></p>
+            <p id="teamy" class="teamMesses"></p>
+            <p id="teamb" class="teamMesses"></p>
+            <p id="namer" class="teamNames"></p>
+            <p id="nameg" class="teamNames"></p>
+            <p id="namey" class="teamNames"></p>
+            <p id="nameb" class="teamNames"></p>
+            <div id="messageDisplay" class= "mfam">
+            </div>
+            <div id="diceRunner"></div>
+            <div class="dices" id="dicetr">
+                <div class="left dside" id="leftr"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"><img src="./index_files/media/coded/7d.svg" worth="7" class="notrealdice dsideImg" alt="dices"></div>
+                <div class="right dside" id="rightr"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"></div>
+            </div>
+            <div class="dices" id="dicetg">
+                <div class="left dside" id="leftg"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"><img src="./index_files/media/coded/7d.svg" worth="7" class="notrealdice dsideImg" alt="dices"></div>
+                <div class="right dside" id="rightg"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"></div>
+            </div>
+            <div class="dices" id="dicety">
+                <div class="left dside" id="lefty"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"><img src="./index_files/media/coded/7d.svg" worth="7" class="notrealdice dsideImg" alt="dices"></div>
+                <div class="right dside" id="righty"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"></div>
+            </div>
+            <div class="dices" id="dicetb">
+                <div class="left dside" id="leftb"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"><img src="./index_files/media/coded/7d.svg" worth="7" class="notrealdice dsideImg" alt="dices"></div>
+                <div class="right dside" id="rightb"><img src="./index_files/media/coded/1d.svg" worth="1" class="dsideImg" alt="dices"><img src="./index_files/media/coded/2d.svg" worth="2" class="dsideImg" alt="dices"><img src="./index_files/media/coded/3d.svg" worth="3" class="dsideImg" alt="dices"><img src="./index_files/media/coded/4d.svg" worth="4" class="dsideImg" alt="dices"><img src="./index_files/media/coded/5d.svg" worth="5" class="dsideImg" alt="dices"><img src="./index_files/media/coded/6d.svg" worth="6" class="dsideImg" alt="dices"></div>
+            </div>
+            <div id="d1pre" class="predict"></div>
+            <div id="d2pre" class="predict"></div>
+            <div id="d3pre" class="predict"></div>
+            <div id="d4pre" class="predict"></div>
+            <div id="d5pre" class="predict"></div>
+            <div id="d6pre" class="predict"></div>
+            <div id="d7pre" class="predict"></div>
+            <div id="d8pre" class="predict"></div>
+            <div id="d9pre" class="predict"></div>
+            <div id="d10pre" class="predict"></div>
+            <div id="skipBox">Skip ?</div>
+        </div>
+    </main>
+    <div id="loading" class="back subMenu">
+        <p>Please wait while we prepare a game for you....</p>
+        <div class="loadBox">
+            <div class="progress" id="progressBar"></div>
+        </div>
+    </div>
+    <div id="waitingRoom" class="back subMenu">
+        <div class="headArea">
+            <p>Your Public id is <span id="idrecshare">---</span> share this with your firends!</p>
+            <p>Waiting for host or atlesat 2 players to start....</p>
+        </div>
+        <div class="scoreBoard">
+            <p presence="false" representative="r1" class="leftLine attendent"><span class="usNameRec">Waiting</span><span id="Rec1Team"
+                    class="redBox sbox"></span></p>
+            <p presence="false" representative="g2" class="leftLine attendent"><span class="usNameRec">Waiting</span><span id="Rec2Team"
+                    class="greenBox sbox"></span></p>
+            <p presence="false" representative="y3" class="leftLine attendent"><span class="usNameRec">Waiting</span><span id="Rec3Team"
+                    class="yellowBox sbox"></span></p>
+            <p presence="false" representative="b4" class="leftLine attendent"><span class="usNameRec">Waiting</span><span id="Rec4Team"
+                    class="blueBox sbox"></span></p>
+        </div>
+        <div class="btns">
+            <button id="startGame" class="btcss">Start &#x1f3b2;</button>
+            <button id="gotoHome"class="btcss"> Home 🏠</button>
+        </div>
+    </div>
+    <div id="viewInfo" class="back subMenu">
+        <div class="headArea">
+            <p>Game Info !</p>
+        </div>
+        <div class="scoreBoard infoMat">
+            <p class="leftLine"><span class="dataName cr"></span><span class="itl disabled playstatus">---Not
+                    Present</span></p>
+            <p class="leftLine"><span class="dataName cg"></span><span class="itl disabled playstatus">---Not
+                    Present</span></p>
+            <p class="leftLine"><span class="dataName cy"></span><span class="itl disabled playstatus">---Not
+                    Present</span></p>
+            <p class="leftLine"><span class="dataName cb"></span><span class="itl disabled playstatus">---Not
+                    Present</span></p>
+            <p class="leftLine"><span class="subHead">Game Id:</span><span id="dataId" class="ans"></span></p>
+        </div>
+        <div class="footerArea">
+            <p>Developed by Syed Bilal Alam</p>
+            <a href="https://www.facebook.com/syedbilalalam2006/" target="_blank">Facebook</a><br>
+            <a href="https://www.instagram.com/syedbilalalam2006/" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <div id="startingScreen" class="back subMenu">
+        <div id="startcontent">
+            <img src="./index_files/media/coded/logo.svg" alt="">
+            <p>LUDO DESK</p>
+        </div>
+        <div id="depname">
+            <p>Developed By</p> <span class="containRatio">Syed Bilal Alam</span>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="./index_files/docs/winningEffect.js"></script>
+    <!-- <script type="text/javascript" src="./index_files/docs/javascripts.js"></script>
+    <script type="text/javascript" src="./index_files/docs/groupRequest.js"></script>
+    <script type="text/javascript" src="./index_files/docs/javascript2.js"></script>
+    <script type="text/javascript" src="./index_files/docs/serverManager.js"></script> -->
+    <script type="text/javascript" src="./index_files/docs/parentJS.js"></script>
+</body>
+
+</html>

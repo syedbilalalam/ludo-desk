@@ -1,0 +1,16 @@
+<svg id="Group_1_copy" data-name="Group 1 copy" xmlns="http://www.w3.org/2000/svg" width="576" height="1080" viewBox="0 0 576 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00ff18;
+        stroke: #000;
+        stroke-width: 30px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M110.876,982.206L336.263,214.859,563.929,979.638Z"/>
+  <path class="cls-1" d="M337.406,70.188c125.11,0,226.532,93.874,226.532,209.671S462.516,489.531,337.406,489.531,110.875,395.658,110.875,279.859,212.3,70.188,337.406,70.188Z"/>
+  <path id="Polygon_1-2" data-name="Polygon 1" class="cls-1" d="M12.965,1070.24L189.149,470.41l177.965,597.82Z"/>
+  <path class="cls-1" d="M190.043,357.308c97.8,0,177.078,73.381,177.078,163.9s-79.281,163.9-177.078,163.9S12.964,611.727,12.964,521.208,92.245,357.308,190.043,357.308Z"/>
+</svg>
